@@ -26,7 +26,10 @@ project directory::
 
     addSbtPlugin("com.cavorite" % "sbt-avro" % "0.3.2")
  
-
+And don't forget to include the settings line in ``build.sbt`` for the task to be activated during the build cycle
+ 
+    sbtavro.SbtAvro.avroSettings
+    
 Scope
 =====
 All settings and tasks are in the ``avro`` scope. If you want to execute the
